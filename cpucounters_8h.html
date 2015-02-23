@@ -109,7 +109,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aedd2ffc654feec5f46ee4138213b8321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedd2ffc654feec5f46ee4138213b8321"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>INTEL_PCM_VERSION</b>&#160;&#160;&#160;&quot;V2.7 ($Format:%ci ID=%h$)&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INTEL_PCM_VERSION</b>&#160;&#160;&#160;&quot;V2.8 ($Format:%ci ID=%h$)&quot;</td></tr>
 <tr class="separator:aedd2ffc654feec5f46ee4138213b8321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4b6fb4f70f9e5a7fe1603982546945e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4b6fb4f70f9e5a7fe1603982546945e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>INTELPCM_API</b></td></tr>
@@ -263,6 +263,10 @@ template&lt;class CounterStateType &gt; </td></tr>
 <tr class="memitem:a459367d7877d09594c2ecd85e04cae61"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cpucounters_8h.html#a459367d7877d09594c2ecd85e04cae61">getL2CacheHits</a> (const CounterStateType &amp;before, const CounterStateType &amp;after)</td></tr>
 <tr class="memdesc:a459367d7877d09594c2ecd85e04cae61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes number of L2 cache hits.  <a href="#a459367d7877d09594c2ecd85e04cae61">More...</a><br /></td></tr>
 <tr class="separator:a459367d7877d09594c2ecd85e04cae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185f850a9a753d9cf4deb8299261fd4c"><td class="memTemplParams" colspan="2">template&lt;class CounterStateType &gt; </td></tr>
+<tr class="memitem:a185f850a9a753d9cf4deb8299261fd4c"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cpucounters_8h.html#a185f850a9a753d9cf4deb8299261fd4c">getL3CacheOccupancy</a> (const CounterStateType &amp;now)</td></tr>
+<tr class="memdesc:a185f850a9a753d9cf4deb8299261fd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes L3 Cache Occupancy.  <a href="#a185f850a9a753d9cf4deb8299261fd4c">More...</a><br /></td></tr>
+<tr class="separator:a185f850a9a753d9cf4deb8299261fd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0e3ffc23c20d0eda7663cb7e4899a2"><td class="memTemplParams" colspan="2">template&lt;class CounterStateType &gt; </td></tr>
 <tr class="memitem:ace0e3ffc23c20d0eda7663cb7e4899a2"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="cpucounters_8h.html#ace0e3ffc23c20d0eda7663cb7e4899a2">getL3CacheHitsNoSnoop</a> (const CounterStateType &amp;before, const CounterStateType &amp;after)</td></tr>
 <tr class="memdesc:ace0e3ffc23c20d0eda7663cb7e4899a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes number of L3 cache hits where no snooping in sibling L2 caches had to be done.  <a href="#ace0e3ffc23c20d0eda7663cb7e4899a2">More...</a><br /></td></tr>
@@ -1155,7 +1159,7 @@ template&lt;class CounterStateType &gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="cpucounters_8h.html#a71af0766460ef7dd3d138ec0d0924eda">getDRAMConsumedEnergy()</a>, <a class="el" href="classPCM.html#a155611028fb95409625e44784f7b4c7b">PCM::getInstance()</a>, and <a class="el" href="classPCM.html#a81ed5d9b2caa55615bc9b6c4e65eccb4">PCM::getJoulesPerEnergyUnit()</a>.</p>
+<p>References <a class="el" href="classPCM.html#ae797dcf2d4162a37a3535dd5aa48f87f">PCM::getCPUModel()</a>, <a class="el" href="cpucounters_8h.html#a71af0766460ef7dd3d138ec0d0924eda">getDRAMConsumedEnergy()</a>, <a class="el" href="classPCM.html#a155611028fb95409625e44784f7b4c7b">PCM::getInstance()</a>, and <a class="el" href="classPCM.html#a81ed5d9b2caa55615bc9b6c4e65eccb4">PCM::getJoulesPerEnergyUnit()</a>.</p>
 
 </div>
 </div>
@@ -1886,6 +1890,26 @@ template&lt;class CounterStateType &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>number of misses </dd></dl>
 
 <p>References <a class="el" href="classPCM.html#ae797dcf2d4162a37a3535dd5aa48f87f">PCM::getCPUModel()</a>, and <a class="el" href="classPCM.html#a155611028fb95409625e44784f7b4c7b">PCM::getInstance()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a185f850a9a753d9cf4deb8299261fd4c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CounterStateType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64 getL3CacheOccupancy </td>
+          <td>(</td>
+          <td class="paramtype">const CounterStateType &amp;&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Computes L3 Cache Occupancy. </p>
 
 </div>
 </div>
@@ -2802,7 +2826,7 @@ template&lt;class CounterStateType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 2 2014 16:22:33 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 10:09:53 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

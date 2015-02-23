@@ -541,6 +541,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a38fcd86b97b8afd997982fbc3313e5e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38fcd86b97b8afd997982fbc3313e5e4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>W_MSR_PMON_FIXED_CTR</b>&#160;&#160;&#160;(0x394)</td></tr>
 <tr class="separator:a38fcd86b97b8afd997982fbc3313e5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de132d539b79a85d803bfccdc9383ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de132d539b79a85d803bfccdc9383ad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IA32_PQR_ASSOC</b>&#160;&#160;&#160;(0xc8f)</td></tr>
+<tr class="separator:a8de132d539b79a85d803bfccdc9383ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b6fe9866f264321ea09304a08c2f77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15b6fe9866f264321ea09304a08c2f77"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IA32_QM_EVTSEL</b>&#160;&#160;&#160;(0xc8d)</td></tr>
+<tr class="separator:a15b6fe9866f264321ea09304a08c2f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fa198c0abe9741b9b25ed5cb6eff57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92fa198c0abe9741b9b25ed5cb6eff57"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IA32_QM_CTR</b>&#160;&#160;&#160;(0xc8e)</td></tr>
+<tr class="separator:a92fa198c0abe9741b9b25ed5cb6eff57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421622883c042056154261dcc918e062"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a421622883c042056154261dcc918e062"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCM_INVALID_L3_CACHE_OCCUPANCY</b>&#160;&#160;&#160;((std::numeric_limits&lt;uint64&gt;::max)())</td></tr>
+<tr class="separator:a421622883c042056154261dcc918e062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8952c7da879bc4523085c453d0bf460"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8952c7da879bc4523085c453d0bf460"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>MSR_PKG_ENERGY_STATUS</b>&#160;&#160;&#160;(0x611)</td></tr>
 <tr class="separator:ae8952c7da879bc4523085c453d0bf460"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -721,21 +733,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a5af4ebca9c3867cda66035a6bcdcb548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5af4ebca9c3867cda66035a6bcdcb548"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>HSX_QPI_PORT2_REGISTER_FUNC_ADDR</b>&#160;&#160;&#160;(2)</td></tr>
 <tr class="separator:a5af4ebca9c3867cda66035a6bcdcb548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac907ae7c95a0ac2d6cbfad8dceda1c79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac907ae7c95a0ac2d6cbfad8dceda1c79"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT0_MISC_REGISTER_DEV_ADDR</b>&#160;&#160;&#160;(8)</td></tr>
-<tr class="separator:ac907ae7c95a0ac2d6cbfad8dceda1c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fe612ba535c6d639bbcecd980ff340"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23fe612ba535c6d639bbcecd980ff340"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT0_MISC_REGISTER_FUNC_ADDR</b>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a23fe612ba535c6d639bbcecd980ff340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a124668710220e13f79721581512bb7e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a124668710220e13f79721581512bb7e5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT1_MISC_REGISTER_DEV_ADDR</b>&#160;&#160;&#160;(9)</td></tr>
-<tr class="separator:a124668710220e13f79721581512bb7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4c95f2092d55b5e9f61255997f73f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d4c95f2092d55b5e9f61255997f73f4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT1_MISC_REGISTER_FUNC_ADDR</b>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a7d4c95f2092d55b5e9f61255997f73f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162f40cd31d3597ee17ca3302f2124bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a162f40cd31d3597ee17ca3302f2124bd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT2_MISC_REGISTER_DEV_ADDR</b>&#160;&#160;&#160;(24)</td></tr>
-<tr class="separator:a162f40cd31d3597ee17ca3302f2124bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35242ec7f0ef05f8388dd6215dce5fdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35242ec7f0ef05f8388dd6215dce5fdd"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>QPI_PORT2_MISC_REGISTER_FUNC_ADDR</b>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a35242ec7f0ef05f8388dd6215dce5fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1138,7 +1141,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 2 2014 16:22:33 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 10:09:53 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

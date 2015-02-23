@@ -151,6 +151,9 @@ uint64&#160;</td><td class="memItemRight" valign="bottom"><b>CStateResidency</b>
 <tr class="memitem:a4950fe3761b2ac599a7ae64ec7bee973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4950fe3761b2ac599a7ae64ec7bee973"></a>
 int32&#160;</td><td class="memItemRight" valign="bottom"><b>ThermalHeadroom</b></td></tr>
 <tr class="separator:a4950fe3761b2ac599a7ae64ec7bee973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99dab23e20418b86be72dda1ecd8858c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99dab23e20418b86be72dda1ecd8858c"></a>
+uint64&#160;</td><td class="memItemRight" valign="bottom"><b>L3Occupancy</b></td></tr>
+<tr class="separator:a99dab23e20418b86be72dda1ecd8858c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -209,6 +212,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PCM</b></td></tr>
 <tr class="memitem:a459367d7877d09594c2ecd85e04cae61"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBasicCounterState.html#a459367d7877d09594c2ecd85e04cae61">getL2CacheHits</a> (const CounterStateType &amp;before, const CounterStateType &amp;after)</td></tr>
 <tr class="memdesc:a459367d7877d09594c2ecd85e04cae61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes number of L2 cache hits.  <a href="#a459367d7877d09594c2ecd85e04cae61">More...</a><br /></td></tr>
 <tr class="separator:a459367d7877d09594c2ecd85e04cae61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185f850a9a753d9cf4deb8299261fd4c"><td class="memTemplParams" colspan="2">template&lt;class CounterStateType &gt; </td></tr>
+<tr class="memitem:a185f850a9a753d9cf4deb8299261fd4c"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBasicCounterState.html#a185f850a9a753d9cf4deb8299261fd4c">getL3CacheOccupancy</a> (const CounterStateType &amp;now)</td></tr>
+<tr class="memdesc:a185f850a9a753d9cf4deb8299261fd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes L3 Cache Occupancy.  <a href="#a185f850a9a753d9cf4deb8299261fd4c">More...</a><br /></td></tr>
+<tr class="separator:a185f850a9a753d9cf4deb8299261fd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a3275c4f489a475f1658f4546567af4"><td class="memTemplParams" colspan="2">template&lt;class CounterStateType &gt; </td></tr>
 <tr class="memitem:a5a3275c4f489a475f1658f4546567af4"><td class="memTemplItemLeft" align="right" valign="top">uint64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBasicCounterState.html#a5a3275c4f489a475f1658f4546567af4">getCycles</a> (const CounterStateType &amp;before, const CounterStateType &amp;after)</td></tr>
 <tr class="memdesc:a5a3275c4f489a475f1658f4546567af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the number core clock cycles when signal on a specific core is running (not halted)  <a href="#a5a3275c4f489a475f1658f4546567af4">More...</a><br /></td></tr>
@@ -1231,6 +1238,34 @@ template&lt;class CounterStateType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a185f850a9a753d9cf4deb8299261fd4c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class CounterStateType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64 getL3CacheOccupancy </td>
+          <td>(</td>
+          <td class="paramtype">const CounterStateType &amp;&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes L3 Cache Occupancy. </p>
+
+</div>
+</div>
 <a class="anchor" id="abaa9d828b52f41866bf7dc8ff491a62e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1385,7 +1420,7 @@ template&lt;class CounterStateType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 2 2014 16:22:33 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 23 2015 10:09:53 for Intel(r) Performance Counter Monitor by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
